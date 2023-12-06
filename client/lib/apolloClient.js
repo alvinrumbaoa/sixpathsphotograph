@@ -2,7 +2,7 @@
 import { ApolloClient, InMemoryCache, HttpLink } from '@apollo/client';
 
 const httpLink = new HttpLink({
-  uri: process.env.NEXT_PUBLIC_SUPABASE_GRAPHQL_ENDPOINT,
+  uri: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
   headers: {
     apiKey: process.env.NEXT_PUBLIC_SUPABASE_API_KEY
   }
